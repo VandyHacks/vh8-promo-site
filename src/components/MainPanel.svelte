@@ -7,7 +7,7 @@
 </script>
 
 <Panel>
-    <Logo width="300px" />
+    <Logo width="25vw" />
     <p>Welcome aboard VH VIII</p>
     <Button name="apply" />
 </Panel>
