@@ -2,9 +2,10 @@
     import { navigate } from "svelte-routing";
 
     export let name;
+    export let path = name;
 
     const handleClick = () => {
-        navigate(`/${name}`, { replace: false });
+        navigate(`/${path}`, { replace: false });
     }
     
 </script>
