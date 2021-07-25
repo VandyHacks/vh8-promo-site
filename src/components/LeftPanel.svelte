@@ -1,20 +1,10 @@
 <script>
     import Button from './Button.svelte';
+    import Panel from './Panel.svelte';
 </script>
 
-<div id="left-panel">
+<Panel>
     <Button name="about" />
     <Button name="faq" />
     <Button name="schedule" />
-</div>
-
-
-<style>
-	#left-panel {
-		display: flex;
-        min-width: 25vw;
-		flex-direction: column;
-		justify-content: center;
-		color: #fff;
-	}
-</style>
+</Panel>
