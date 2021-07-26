@@ -1,10 +1,11 @@
 <script>
     import Logo from "../assets/vhlogo.svelte";
     import Button from '../components/Button.svelte';
+    import Modal from "../components/Modal.svelte";
 </script>
 
 <div id="about">
-    <div class="modal">
+    <Modal>
         <div class="logo-container">
             <Logo width="120px" />
             <h1>ABOUT</h1>
@@ -22,7 +23,7 @@
         <div class="return-button">
             <Button name="return" path="" />
         </div>
-    </div>
+    </Modal>
 </div>
 
 <style>
@@ -42,14 +43,6 @@
         gap: 1vw;
         width: 20vw;
         padding: 0;
-    }
-    .modal {
-        background: rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-        color: #fff;
-        padding: 1vh 5vw;
-        word-wrap: break-word;
-        font-size: 1.75rem;
     }
     .return-button {
         display: flex;
