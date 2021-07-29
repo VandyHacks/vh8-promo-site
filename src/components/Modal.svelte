@@ -1,6 +1,19 @@
+<script>
+    import Logo from "../assets/vhlogo.svelte";
+    import Button from '../components/Button.svelte';
+
+    export let title;
+</script>
 
 <div class="modal">
+    <div class="logo-container">
+        <Logo width="120px" />
+        <h1>{title}</h1>
+    </div>
     <slot></slot>
+    <div class="return-button">
+        <Button name="return" path="" />
+    </div>
 </div>
 
 <style>
@@ -11,5 +24,20 @@
         padding: 1vh 5vw;
         word-wrap: break-word;
         font-size: 1.75rem;
+    }
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1vw;
+        width: 20vw;
+        padding: 0;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .return-button {
+        display: flex;
+        justify-content: flex-end;
     }
 </style>
