@@ -5,7 +5,7 @@
 <div id="about">
     <Modal title="ABOUT">
         <ul>
-            <li>Mission: VH VII</li>
+            <li>Mission: VH VIII</li>
             <li>Date: October 10, 2021</li>
             <li>Location: The Wond'ry</li>
             <li>
