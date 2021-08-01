@@ -35,6 +35,7 @@
     }
     h1 {
         font-size: 3rem;
+        font-weight: 500;
     }
     .return-button {
         display: flex;

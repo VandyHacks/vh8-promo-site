@@ -24,4 +24,7 @@
         min-height: 100vh;
         padding: 10vh 10vw;
     }
+    ul {
+        margin-left: 5vw;
+    }
 </style>
