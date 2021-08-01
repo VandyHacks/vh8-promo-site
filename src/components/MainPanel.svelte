@@ -1,13 +1,57 @@
-
 <script>
     import Logo from "../assets/vhlogo.svelte";
 
-    import Button from './Button.svelte';
-    import Panel from './Panel.svelte';
+    import Panel from "./Panel.svelte";
 </script>
 
 <Panel>
-    <Logo width="25vw" />
-    <p>Welcome aboard VH VIII</p>
-    <Button name="apply" />
+    <div class="logo-container">
+        <Logo width="9vw" />
+    </div>
+    <div class="subtitle">
+        <span class="subtitle-text">
+            Welcome aboard VH VIII.
+        </span>
+    </div>
+    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">APPLY</a></button>
 </Panel>
+
+<style>
+    .logo-container {
+        align-self: center;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        width: 13vw;
+        height: 13vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        border-radius: 50%;
+    }
+
+    .subtitle {
+        min-width: 15vw;
+        padding: 0.5vh 2vw;
+        border-radius: 50px;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.8) 20%,
+            rgba(0, 0, 0, 0.2) 80%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    .subtitle-text{
+        font-size: 2rem;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
