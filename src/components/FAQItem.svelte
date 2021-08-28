@@ -1,10 +1,7 @@
 <script>
-    import Logo from "../assets/vhlogo.svelte";
-    import Button from '../components/Button.svelte';
-
     export let question;
     export let answer;
-    
+
     let expanded = false;
     let icon = "rightTriangle";
 
@@ -18,21 +15,38 @@
     }
 </script>
 
-<div on:click={toggle}>
-    <li style="list-style-image: url('/assets/{icon}.svg');">
+<div on:click={toggle} class="noselect">
+    <li style="list-style-image: url('/assets/{icon}.svg');" class="outer-list">
         {question}
         {#if expanded}
             <ul class="inner-list">
-                <li>{answer}</li>
+                <li class="answer">{answer}</li>
             </ul>
         {/if}
     </li>
 </div>
 
 <style>
+    .outer-list {
+        margin: 1rem 0;
+    }
+    
     .inner-list {
         list-style: none inside;
         padding-left: 1em;
         font-size: 0.7em;
+    }
+
+    .answer {
+        padding: 1rem;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 </style>
