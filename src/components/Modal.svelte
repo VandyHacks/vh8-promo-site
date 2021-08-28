@@ -7,7 +7,7 @@
 
 <div class="modal">
     <div class="logo-container">
-        <Logo width="120px" />
+        <Logo width="5vw" height="auto" />
         <h1>{title}</h1>
     </div>
     <slot></slot>
@@ -24,6 +24,8 @@
         padding: 1vh 5vw;
         word-wrap: break-word;
         font-size: 1.75rem;
+	    box-sizing: border-box;
+        margin: 0;
     }
     .logo-container {
         display: flex;
