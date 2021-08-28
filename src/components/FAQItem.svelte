@@ -28,9 +28,9 @@
 
 <style>
     .outer-list {
-        margin: 1rem 0;
+        margin-top: 1.25rem;
     }
-    
+
     .inner-list {
         list-style: none inside;
         padding-left: 1em;
@@ -38,7 +38,7 @@
     }
 
     .answer {
-        padding: 1rem;
+        padding: 1.25rem 1.25rem 0 1.25rem;
     }
 
     .noselect {
