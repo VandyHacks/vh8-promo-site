@@ -19,11 +19,11 @@
 <style>
     .container {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 2.5fr;
         grid-template-rows: 1fr;
         grid-template-areas: "pic text";
-        padding-bottom: 5%;
-        min-height: 50vh;
+        min-height: 20vh;
+        align-items: center;
     }
     .pic {
         display: flex;
@@ -31,6 +31,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 5vh 0;
+        box-sizing: border-box;
     }
     .image {
         width: 50%;
@@ -45,22 +47,24 @@
     }
     .eventName {
         display: flex;
-        width: 90%;
-        padding: 2%;
+        max-width: 90%;
+        padding: 1vh 5vw;
         margin-bottom: -3%;
         flex-direction: column;
         justify-content: center;
-        min-height: 30%;
-        border: solid 1px white;
+        max-height: 30%;
         border-radius: 10px;
         text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
     }
     .eventDesc {
-        width: 80%;
-        height: 90%;
-        font-size: 0.8em;
-        border: solid 1px white;
+        width: 60%;
+        min-height: 50%;
+        max-height: 90%;
+        font-size: 0.7em;
         border-radius: 10px;
         padding: 5%;
+        background-color: rgba(100, 100, 100, 0.75);
     }
 </style>
