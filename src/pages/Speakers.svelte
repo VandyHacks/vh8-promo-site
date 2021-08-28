@@ -23,5 +23,6 @@
     #content {
         overflow-y: auto;
         height: 50vh;
+        padding-left: 5vw;
     }
 </style>
