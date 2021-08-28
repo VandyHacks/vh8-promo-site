@@ -23,6 +23,7 @@
         grid-template-rows: 1fr;
         grid-template-areas: "pic text";
         padding-bottom: 5%;
+        min-height: 50vh;
     }
     .pic {
         display: flex;

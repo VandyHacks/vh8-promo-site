@@ -32,7 +32,7 @@
         border: solid 1px white;
         border-radius: 10px;
         margin: 0 5% 0 5%;
-        width: 30%;
+        width: 50%;
     }
     .text-wrapper {
         display: flex;
@@ -46,5 +46,6 @@
         font-size: 0.7em;
         width: 60%;
         padding: 15% 5% 15% 5%;
+        text-align: center;
     }
 </style>
