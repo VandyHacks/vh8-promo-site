@@ -23,4 +23,8 @@
         min-height: 100vh;
         padding: 10vh 10vw;
     }
+
+    #list {
+        padding-left: 5vw;
+    }
 </style>
