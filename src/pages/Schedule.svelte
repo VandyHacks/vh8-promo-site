@@ -5,7 +5,8 @@
 <div id="schedule">
     <Modal title="SCHEDULE">
         <div id="container">
-            <img src="https://via.placeholder.com/2000x200" alt="schedule" />
+            <!--<img src="https://via.placeholder.com/2000x200" alt="schedule" />-->
+            TBD
         </div>
     </Modal>
 </div>

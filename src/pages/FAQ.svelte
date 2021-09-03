@@ -7,12 +7,8 @@
     <Modal title="FAQ">
         <div id="list-container">
             <ul id="list">
-                <FAQItem question="Is this a virtual event?" answer="This is the answer" />
-                <FAQItem question="Can non-Vandy students join?" answer="This is the answer" />
-                <FAQItem question="Will there be food?" answer="Yes! We have partnered up with local catering services to provide you lunch and dinner! (No breakfast, though, you're on your own!)" />
-                <FAQItem question="How many people can be on my team?" answer="This is the answer" />
-                <FAQItem question="What are the prizes?" answer="This is the answer" />
-                <FAQItem question="I don't know how to code. Are there any workshops?" answer="This is the answer" />
+                <FAQItem question="Can teams be a mix of virtual and in-person hackers?" answer="Yes!" />
+                <FAQItem question="Who can participate in-person?" answer="Due to Vanderbilt University's COVID-19 protocols and regulations, only Vanderbilt students can attend VandyHacks VIII in-person. We will make sure that virtual hackers still have a great experience, though! All project submission and judging will be held online to ensure fairness, and mini events will have online equivalents." />
             </ul>
         </div>
     </Modal>

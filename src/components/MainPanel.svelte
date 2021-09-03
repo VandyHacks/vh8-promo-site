@@ -13,7 +13,7 @@
             Welcome aboard VH VIII.
         </span>
     </div>
-    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">APPLY</a></button>
+    <button disabled><!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">-->Applications open 9/6<!--</a>--></button>
 </Panel>
 
 <style>
