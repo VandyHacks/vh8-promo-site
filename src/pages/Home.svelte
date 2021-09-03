@@ -1,7 +1,7 @@
 <script>
-	import LeftPanel from '../components/LeftPanel.svelte';
-	import MainPanel from '../components/MainPanel.svelte'
-	import RightPanel from '../components/RightPanel.svelte';
+	import LeftPanel from "../components/LeftPanel.svelte";
+	import MainPanel from "../components/MainPanel.svelte";
+	import RightPanel from "../components/RightPanel.svelte";
 </script>
 
 <div id="home">
@@ -10,10 +10,10 @@
 	<RightPanel />
 </div>
 
-
 <style>
 	#home {
-		background-color: #121212;
+		background-color: transparent;
+		z-index: 2;
 		text-align: center;
 		max-width: 100vw;
 		height: 100vh;
@@ -23,5 +23,6 @@
 		flex-direction: row;
 		justify-content: space-around;
 		color: #fff;
+		z-index: 2;
 	}
 </style>

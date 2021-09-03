@@ -20,7 +20,8 @@
 
 <style>
     #faq {
-        background-color: #121212;
+		background-color: transparent;
+		z-index: 2;
         max-width: 100vw;
         min-height: 100vh;
         padding: 10vh 10vw;
