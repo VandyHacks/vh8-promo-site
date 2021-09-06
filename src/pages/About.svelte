@@ -7,7 +7,7 @@
 
 <Layout>
     <div id="about">
-        <Modal title="ABOUT">
+        <Modal title="ABOUT" let:hidden={hidden}>
             <ul>
                 <li>Mission: VH VIII</li>
                 <li>Date: October 10, 2021</li>

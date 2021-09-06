@@ -3,9 +3,10 @@
     import Button from '../components/Button.svelte';
 
     export let title;
+    export let hidden;
 </script>
 
-<div class="modal">
+<div class="modal" class:hidden>
     <div class="logo-container">
         <Logo width="5vw" height="auto" />
         <h1>{title}</h1>
@@ -28,6 +29,7 @@
         margin: 0;
         position: relative;
         z-index: 4;
+        min-width: 60vw;
     }
     .logo-container {
         display: flex;

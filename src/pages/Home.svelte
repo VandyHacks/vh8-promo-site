@@ -6,11 +6,11 @@
 </script>
 
 <Layout>
-<div id="home">
-	<!-- <LeftPanel /> -->
-	<MainPanel />
-	<!-- <RightPanel /> -->
-</div>
+	<div id="home">
+		<!-- <LeftPanel /> -->
+		<MainPanel />
+		<!-- <RightPanel /> -->
+	</div>
 </Layout>
 <style>
 	#home {

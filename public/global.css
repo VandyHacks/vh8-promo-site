@@ -148,7 +148,7 @@ button:not(:disabled):active {
   transition: all 0.3s;
 }
 
-.hasActive #home {
+.hidden {
   margin-top: -100vh;
 }
 
