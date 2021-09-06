@@ -83,7 +83,7 @@ button:not(:disabled):active {
 } */
 
 #about-button {
-  animation-duration: 4.4s;
+  /* animation-duration: 4.4s; */
   width: 16vw;
   height: 16vw;
   left: 10vw;
@@ -91,7 +91,7 @@ button:not(:disabled):active {
 }
 
 #faq-button {
-  animation-duration: 6s;
+  /* animation-duration: 6s; */
   width: 24vw;
   height: 24vw;
   left: 8vw;
@@ -99,7 +99,7 @@ button:not(:disabled):active {
 }
 
 #sponsors-button {
-  animation-duration: 4.9s;
+  /* animation-duration: 4.9s; */
   width: 18vw;
   height: 18vw;
   left: 68vw;
@@ -107,7 +107,7 @@ button:not(:disabled):active {
 }
 
 #winners-button {
-  animation-duration: 3s;
+  /* animation-duration: 3s; */
   width: 12vw;
   height: 12vw;
   left: 78vw;

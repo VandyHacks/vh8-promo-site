@@ -33,7 +33,7 @@
                 } else {
                     navigate(`/${path}`, { replace: false });
                 }
-            }, (hasPlanetEffect ? 1400 : 0));
+            }, (hasPlanetEffect ? 500 : 0));
         }
     }
 </script>
@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 1.4s ease-in-out;
+        transition: all 0.5s ease-in-out;
         /* font-size: 8vw; */
         /* width: 40vw;
         height: 40vh; */
