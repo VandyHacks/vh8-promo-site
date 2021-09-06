@@ -6,3 +6,5 @@ export const hasActive = derived(
   currentlyActive,
   ($currentlyActive) => $currentlyActive !== ""
 );
+
+export const isContentHidden = writable(false);

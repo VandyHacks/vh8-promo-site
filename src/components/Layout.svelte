@@ -1,7 +1,8 @@
 <script>
     import Button from './Button.svelte';
 	import { onDestroy } from 'svelte';
-	import { currentlyActive, hasActive } from '../stores.js';	
+	import { currentlyActive, hasActive, isContentHidden } from '../stores.js';
+	isContentHidden.set(false);
 </script>
 
 <div class:hasActive={$hasActive}>
@@ -9,7 +10,19 @@
     <Button id="faq-button" image="dustPlanet.svg" name="faq" active={$currentlyActive === "faq"}/>
     <Button id="sponsors-button" image="orangePlanet.svg" name="sponsors" active={$currentlyActive === "sponsors"}/>
     <Button id="winners-button" image="redPlanet.svg" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" noPlanetEffect={true} active={false}/>
-    <slot/>
+	<div class="content">
+		<slot />
+	</div>
     <!-- <Button image="grayPlanet.png" name="schedule" /> -->
     <!-- <Button image="purplePlanet.png" name="speakers" /> -->
 </div>
+
+<style>
+	.content {
+		background-color: transparent;
+		z-index: 2;
+        width: 80vw;
+        height: 80vh;
+        padding: 10vh 10vw;
+    }
+</style>

@@ -1,12 +1,11 @@
 <script>
     import Logo from "../assets/vhlogo.svelte";
     import Button from '../components/Button.svelte';
-
+	import { isContentHidden } from '../stores.js';
     export let title;
-    export let hidden;
 </script>
 
-<div class="modal" class:hidden>
+<div class="modal" class:hidden={$isContentHidden}>
     <div class="logo-container">
         <Logo width="5vw" height="auto" />
         <h1>{title}</h1>

@@ -144,12 +144,9 @@ button:not(:disabled):active {
   margin-top: -45vw;
 }
 
-.panel {
-  transition: all 0.3s;
-}
-
 .hidden {
-  margin-top: -100vh;
+  margin-top: -100vh !important;
+  transition: all 0.5s;
 }
 
 .hasActive .planetButton:not(.active) {

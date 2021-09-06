@@ -1,7 +1,7 @@
 <script>
     import { createEventDispatcher } from "svelte";
     import { navigate } from "svelte-routing";
-    import { currentlyActive } from '../stores.js';
+    import { currentlyActive, isContentHidden } from '../stores.js';
 
     export let name;
     export let image;
@@ -18,6 +18,7 @@
         let timeout = 0;
         if (!noPlanetEffect) {
             timeout = 1400;
+            isContentHidden.set(true);
             if (planetButton) {
                 dispatch("clickPlanet");
                 active = true;
