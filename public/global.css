@@ -67,20 +67,20 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: #060606;
+  /* background-color: #060606; */
 }
 
 button:disabled {
-  color: #999;
+  /* color: #999; */
 }
-
-/* button:not(:disabled):active {
+/* 
+button:not(:disabled):active {
   background-color: #ddd;
 } */
 
-button:focus {
+/* button:focus {
   border-color: #666;
-}
+} */
 
 #about-button {
   animation-duration: 4.4s;
@@ -132,8 +132,8 @@ button:focus {
   }
 }
 
-.active {
-  background-color: #ddd;
+.planetButton.active {
+  /* background-color: #ddd; */
   font-size: 0;
   z-index: -1;
   left: 50% !important;
@@ -148,10 +148,7 @@ button:focus {
   transition: all 0.3s;
 }
 
-/* .hasActive *:not(.active) {
-  display: none;
-} */
-.hasActive div {
+.hasActive #home {
   margin-top: -100vh;
 }
 

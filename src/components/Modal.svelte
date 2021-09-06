@@ -12,7 +12,7 @@
     </div>
     <slot></slot>
     <div class="return-button">
-        <Button name="return" path="" />
+        <Button planetButton={false} name="return" path="" />
     </div>
 </div>
 
@@ -26,6 +26,8 @@
         font-size: 1.75rem;
 	    box-sizing: border-box;
         margin: 0;
+        position: relative;
+        z-index: 4;
     }
     .logo-container {
         display: flex;

@@ -1,7 +1,7 @@
 <script>
-import { createEventDispatcher } from "svelte";
-
+    import { createEventDispatcher } from "svelte";
     import { navigate } from "svelte-routing";
+    import { currentlyActive } from '../stores.js';
 
     export let name;
     export let image;
@@ -9,26 +9,29 @@ import { createEventDispatcher } from "svelte";
     export let url;
     export let id;
     export let active = false;
+    export let planetButton = true;
     export let noPlanetEffect = false;
 
     const dispatch = createEventDispatcher();
 
     const handleClick = () => {
-        dispatch("clickPlanet");
-        // console.log("HI!HI!")
         if (!noPlanetEffect) {
-            active = !active;
+            dispatch("clickPlanet");
+            active = true;
+            currentlyActive.set(name);
         }
-        // if (url) {
-        //     navigate(url);
-        // } else {
-        //     navigate(`/${path}`, { replace: false });
-        // }
+        setTimeout( () => {
+            if (url) {
+                navigate(url);
+            } else {
+                navigate(`/${path}`, { replace: false });
+            }
+        }, 1400);
     }
     
 </script>
 
-<button id={id} style="background-image: url(assets/{image})" class="planetButton" class:active on:click={handleClick}>{name.toLowerCase()}</button>
+<button id={id} style="background-image: url(assets/{image})" class:planetButton class:active on:click={handleClick}>{name.toLowerCase()}</button>
 
 <style>
     .planetButton {
