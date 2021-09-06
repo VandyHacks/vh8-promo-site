@@ -5,6 +5,7 @@
     export let image;
     export let path = name;
     export let url;
+    export let id;
 
     const handleClick = () => {
         if (url) {
@@ -16,7 +17,7 @@
     
 </script>
 
-<button style="background-image: url(assets/{image})" class="panelButton" on:click={handleClick}>{name.toLowerCase()}</button>
+<button id={id} style="background-image: url(assets/{image})" class="panelButton floater" on:click={handleClick}>{name.toLowerCase()}</button>
 
 <style>
     .panelButton {
