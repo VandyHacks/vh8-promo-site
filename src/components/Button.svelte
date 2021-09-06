@@ -25,7 +25,7 @@
         background-position: center;
         padding: 0.4em;
         background-color: rgba(0, 0, 0, 0);
-        width: 20vw;
-        height: 20vh;
+        width: 40vw;
+        height: 40vh;
     }
 </style>

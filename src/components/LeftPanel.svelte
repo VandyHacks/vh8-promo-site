@@ -4,7 +4,7 @@
 </script>
 
 <Panel>
-    <Button image="bluePlanet.png" name="about" />
-    <Button image="dustPlanet.png" name="faq" />
-    <Button image="grayPlanet.png" name="schedule" />
+    <Button id="about-button" image="bluePlanet.png" name="about" />
+    <Button id="faq-button" image="dustPlanet.png" name="faq" />
+    <!-- <Button image="grayPlanet.png" name="schedule" /> -->
 </Panel>
