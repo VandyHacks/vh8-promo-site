@@ -115,7 +115,7 @@ button:not(:disabled):active {
 }
 
 .planetButton {
-  animation-name: floating;
+  /* animation-name: floating; */
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
