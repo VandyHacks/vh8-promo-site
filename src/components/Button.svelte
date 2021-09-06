@@ -10,32 +10,32 @@
     export let id;
     export let active = false;
     export let planetButton = true;
-    export let noPlanetEffect = false;
+    export let hasPlanetEffect = true;
 
     const dispatch = createEventDispatcher();
 
     const handleClick = () => {
-        let timeout = 0;
-        if (!noPlanetEffect) {
-            timeout = 1400;
-            isContentHidden.set(true);
-            if (planetButton) {
-                dispatch("clickPlanet");
-                active = true;
-                currentlyActive.set(name);
-            } else {
-                currentlyActive.set(""); 
+        if (!active) {
+            if (hasPlanetEffect) {
+                isContentHidden.set(true);
+                if (planetButton) {
+                    dispatch("clickPlanet");
+                    active = true;
+                    currentlyActive.set(name);
+                } else {
+                    currentlyActive.set(""); 
+                }
             }
+            
+            setTimeout(() => {
+                if (url) {
+                    navigate(url);
+                } else {
+                    navigate(`/${path}`, { replace: false });
+                }
+            }, (hasPlanetEffect ? 1400 : 0));
         }
-        setTimeout( () => {
-            if (url) {
-                navigate(url);
-            } else {
-                navigate(`/${path}`, { replace: false });
-            }
-        }, timeout);
     }
-    
 </script>
 
 <button id={id} style="background-image: url(assets/{image})" class:planetButton class:active on:click={handleClick}>{name.toLowerCase()}</button>
