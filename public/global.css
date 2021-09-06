@@ -138,10 +138,10 @@ button:not(:disabled):active {
   z-index: -1;
   left: 50% !important;
   top: 50% !important;
-  width: 90vw !important;
-  height: 90vw !important;
-  margin-left: -45vw;
-  margin-top: -45vw;
+  width: 200vw !important;
+  height: 200vw !important;
+  margin-left: -100vw;
+  margin-top: -100vw;
 }
 
 .hidden {
@@ -223,5 +223,12 @@ strong {
   ul,
   #list-container {
     max-height: 40vh;
+  }
+
+  .planetButton.active {
+    width: 120vh !important;
+    height: 120vh !important;
+    margin-left: -60vh;
+    margin-top: -60vh;
   }
 }
