@@ -74,9 +74,9 @@ button:disabled {
   color: #999;
 }
 
-button:not(:disabled):active {
+/* button:not(:disabled):active {
   background-color: #ddd;
-}
+} */
 
 button:focus {
   border-color: #666;
@@ -95,14 +95,14 @@ button:focus {
   width: 24vw;
   height: 24vw;
   left: 8vw;
-  bottom: 8vh;
+  top: 60vh;
 }
 
 #sponsors-button {
   animation-duration: 4.9s;
   width: 18vw;
   height: 18vw;
-  right: 14vw;
+  left: 68vw;
   top: 20vh;
 }
 
@@ -110,11 +110,11 @@ button:focus {
   animation-duration: 3s;
   width: 12vw;
   height: 12vw;
-  right: 10vw;
-  bottom: 20vh;
+  left: 78vw;
+  top: 60vh;
 }
 
-.floater {
+.planetButton {
   animation-name: floating;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -130,4 +130,42 @@ button:focus {
   100% {
     transform: translate(0, -0px);
   }
+}
+
+.active {
+  background-color: #ddd;
+  left: 50% !important;
+  top: 50% !important;
+  width: 90vw !important;
+  height: 90vw !important;
+  margin-left: -45vw;
+  margin-top: -45vw;
+}
+
+.hasActive *:not(.active) {
+  display: none;
+}
+
+.hasActive .planetButton:not(.active) {
+  width: 0 !important;
+}
+
+.hasActive > #about-button:not(.active) {
+  left: -20%;
+  top: -20%;
+}
+
+.hasActive > #faq-button:not(.active) {
+  left: -20%;
+  top: 120%;
+}
+
+.hasActive > #winners-button:not(.active) {
+  left: 120%;
+  top: 120%;
+}
+
+.hasActive > #sponsors-button:not(.active) {
+  left: 120%;
+  top: -20%;
 }

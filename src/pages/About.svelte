@@ -1,7 +1,9 @@
 <script>
     import Modal from "../components/Modal.svelte";
+    import Layout from "../components/Layout.svelte";
 </script>
 
+<Layout>
 <div id="about">
     <Modal title="ABOUT">
         <ul>
@@ -14,6 +16,7 @@
         </ul>
     </Modal>
 </div>
+</Layout>
 
 <style>
     #about {

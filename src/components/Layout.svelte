@@ -1,14 +1,18 @@
 <script>
     import Button from './Button.svelte';
-    export let content;
+    export let hasActive = false;
+    const handleClick = () => {
+        console.log("HI!");
+        hasActive = !hasActive;
+    }
 </script>
 
-<div id="home">
-    <Button id="about-button" image="bluePlanet.png" name="about" />
-    <Button id="faq-button" image="dustPlanet.png" name="faq" />
+<div class:hasActive>
+    <Button id="about-button" image="bluePlanet.svg" name="about" on:clickPlanet={handleClick}/>
+    <Button id="faq-button" image="dustPlanet.png" name="faq" on:clickPlanet={handleClick}/>
     <slot />
-    <Button id="sponsors-button" image="orangePlanet.png" name="sponsors" />
-    <Button id="winners-button" image="redPlanet.png" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" />
+    <Button id="sponsors-button" image="orangePlanet.png" name="sponsors" on:clickPlanet={handleClick}/>
+    <Button id="winners-button" image="redPlanet.png" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" noPlanetEffect={true}/>
     <!-- <Button image="grayPlanet.png" name="schedule" /> -->
     <!-- <Button image="purplePlanet.png" name="speakers" /> -->
 </div>
