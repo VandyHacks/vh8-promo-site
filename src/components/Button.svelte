@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out, font-size 0s;
         /* font-size: 8vw; */
         /* width: 40vw;
         height: 40vh; */
