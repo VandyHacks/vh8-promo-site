@@ -15,10 +15,12 @@
     const dispatch = createEventDispatcher();
 
     const handleClick = () => {
-        if (!noPlanetEffect) {
+        if (planetButton && !noPlanetEffect) {
             dispatch("clickPlanet");
             active = true;
             currentlyActive.set(name);
+        } else if (!planetButton) {
+            currentlyActive.set("");
         }
         setTimeout( () => {
             if (url) {

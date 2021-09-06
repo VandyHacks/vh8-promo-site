@@ -5,7 +5,7 @@
     currentlyActive.set("about");
 </script>
 
-<Layout hasActive={true}>
+<Layout>
     <div id="about">
         <Modal title="ABOUT">
             <ul>

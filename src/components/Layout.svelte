@@ -1,13 +1,14 @@
 <script>
     import Button from './Button.svelte';
-	import { currentlyActive } from '../stores.js';
-    export let hasActive = false;
+	import { currentlyActive, hasActive } from '../stores.js';
+    // export let hasActive = false;
     const handleClick = () => {
-        hasActive = true;
+        // hasActive = true;
+		console.log("delete me")
     }
 </script>
 
-<div class:hasActive>
+<div class:hasActive={$hasActive}>
     <Button id="about-button" image="bluePlanet.svg" name="about" on:clickPlanet={handleClick} active={$currentlyActive === "about"}/>
     <Button id="faq-button" image="dustPlanet.png" name="faq" on:clickPlanet={handleClick} active={$currentlyActive === "faq"}/>
     <Button id="sponsors-button" image="orangePlanet.png" name="sponsors" on:clickPlanet={handleClick} active={$currentlyActive === "sponsors"}/>
