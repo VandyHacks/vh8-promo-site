@@ -92,10 +92,10 @@ button:not(:disabled):active {
 
 #faq-button {
   /* animation-duration: 6s; */
-  width: 24vw;
-  height: 24vw;
-  left: 8vw;
-  top: 50vh;
+  width: 38vw;
+  height: 38vw;
+  left: 5vw;
+  top: 30vh;
 }
 
 #sponsors-button {
