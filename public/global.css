@@ -87,7 +87,7 @@ button:not(:disabled):active {
   width: 16vw;
   height: 16vw;
   left: 10vw;
-  top: 10vh;
+  top: 5vh;
 }
 
 #faq-button {
@@ -102,8 +102,8 @@ button:not(:disabled):active {
   /* animation-duration: 4.9s; */
   width: 18vw;
   height: 18vw;
-  left: 68vw;
-  top: 20vh;
+  left: 60vw;
+  top: 5vh;
 }
 
 #winners-button {

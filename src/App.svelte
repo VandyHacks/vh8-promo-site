@@ -163,7 +163,8 @@
 
 <style>
 	#main {
-		background-color: #0c1645;
+		background-image: url("../assets/background.png");
+		background-size: 100%;
 		max-width: 100vw;
 		height: 100vh;
 		margin: 0;
