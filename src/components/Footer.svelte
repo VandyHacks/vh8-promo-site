@@ -217,4 +217,28 @@
     color: white;
 }
 
+@media only screen and (max-width: 420px) {
+  .socials {
+    padding: 0% 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+    overflow-y: hidden;
+  }
+  .socials a {
+    margin: 0 5px;
+    width: 29px;
+    height: 29px;
+  }
+  .socials svg {
+    width: 24px;
+    height: 24px;
+  }
+  .footer {
+    font-size: 0.7rem;
+    top: calc(86vh + 45px);
+  }
+}
+
 </style>
