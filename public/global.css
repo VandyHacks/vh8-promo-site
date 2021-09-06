@@ -114,8 +114,8 @@ button:not(:disabled):active {
   top: 60vh;
 }
 
-.planetButton {
-  /* animation-name: floating; */
+/* .planetButton:not(.active) {
+  animation-name: floating;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -130,7 +130,7 @@ button:not(:disabled):active {
   100% {
     transform: translate(0, -0px);
   }
-}
+} */
 
 .planetButton.active {
   /* background-color: #ddd; */
