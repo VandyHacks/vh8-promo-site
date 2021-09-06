@@ -1,6 +1,6 @@
 <script>
     import Button from './Button.svelte';
-	import { onDestroy } from 'svelte';
+    import Footer from './Footer.svelte';   
 	import { currentlyActive, hasActive, isContentHidden } from '../stores.js';
 	isContentHidden.set(false);
 </script>
@@ -13,6 +13,7 @@
 	<div class="content">
 		<slot />
 	</div>
+    <Footer />
     <!-- <Button image="grayPlanet.png" name="schedule" /> -->
     <!-- <Button image="purplePlanet.png" name="speakers" /> -->
 </div>
