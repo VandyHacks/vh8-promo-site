@@ -84,18 +84,34 @@ button:focus {
 
 #about-button {
   animation-duration: 4.4s;
+  width: 16vw;
+  height: 16vw;
+  left: 10vw;
+  top: 10vh;
 }
 
 #faq-button {
   animation-duration: 6s;
+  width: 24vw;
+  height: 24vw;
+  left: 8vw;
+  bottom: 8vh;
 }
 
 #sponsors-button {
   animation-duration: 4.9s;
+  width: 18vw;
+  height: 18vw;
+  right: 14vw;
+  top: 20vh;
 }
 
 #winners-button {
   animation-duration: 3s;
+  width: 12vw;
+  height: 12vw;
+  right: 10vw;
+  bottom: 20vh;
 }
 
 .floater {

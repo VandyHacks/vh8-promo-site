@@ -2,14 +2,16 @@
 	import LeftPanel from "../components/LeftPanel.svelte";
 	import MainPanel from "../components/MainPanel.svelte";
 	import RightPanel from "../components/RightPanel.svelte";
+	import Layout from "../components/Layout.svelte";
 </script>
 
+<Layout>
 <div id="home">
-	<LeftPanel />
+	<!-- <LeftPanel /> -->
 	<MainPanel />
-	<RightPanel />
+	<!-- <RightPanel /> -->
 </div>
-
+</Layout>
 <style>
 	#home {
 		background-color: transparent;
