@@ -6,7 +6,7 @@
 
 <Panel>
     <div class="logo-container">
-        <Logo width="9vw" />
+        
     </div>
     <div class="subtitle">
         <span class="subtitle-text">
@@ -19,12 +19,18 @@
 <style>
     .logo-container {
         align-self: center;
-        background: linear-gradient(
+        /*background: linear-gradient(
             to bottom,
             rgba(0, 0, 0, 1) 0%,
             rgba(0, 0, 0, 0.5) 50%,
             rgba(0, 0, 0, 0) 100%
-        );
+        );*/
+        background-image: url("../assets/logo.png");
+        background-size: 80%;
+        background-color: white;
+        box-shadow: 0px 0px 10px #fabc05;
+        background-repeat: no-repeat;
+        background-position: center;
         width: 13vw;
         height: 13vw;
         display: flex;
@@ -38,13 +44,13 @@
         min-width: 15vw;
         padding: 0.5vh 2vw;
         border-radius: 50px;
-        background: linear-gradient(
+        /*background: linear-gradient(
             to top,
             rgba(0, 0, 0, 1) 0%,
             rgba(0, 0, 0, 0.8) 20%,
             rgba(0, 0, 0, 0.2) 80%,
             rgba(0, 0, 0, 0) 100%
-        );
+        );*/
     }
 
     .subtitle-text{
