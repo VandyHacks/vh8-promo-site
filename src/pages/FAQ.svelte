@@ -2,7 +2,8 @@
     import FAQItem from '../components/FAQItem.svelte';
     import Layout from '../components/Layout.svelte';
     import Modal from "../components/Modal.svelte";
-import Schedule from './Schedule.svelte';
+    import { currentlyActive } from '../stores.js';
+    currentlyActive.set("faq");
 </script>
 
 <Layout>

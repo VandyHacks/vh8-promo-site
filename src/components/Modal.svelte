@@ -19,7 +19,7 @@
 
 <style>
     .modal {
-        background: rgba(0, 0, 0, 0.25);
+        background: rgba(0, 0, 0, 0.5);
         border-radius: 20px;
         color: #fff;
         padding: 1vh 5vw;

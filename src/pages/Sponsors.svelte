@@ -1,7 +1,9 @@
 <script>
     import Layout from "../components/Layout.svelte";
-import Modal from "../components/Modal.svelte";
+    import Modal from "../components/Modal.svelte";
     import SponsorItem from "../components/SponsorItem.svelte";
+    import { currentlyActive } from '../stores.js';
+    currentlyActive.set("sponsors");
 </script>
 
 <Layout>
