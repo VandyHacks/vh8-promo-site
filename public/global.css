@@ -1,78 +1,222 @@
 @font-face {
-	font-family: 'Aldrich';
-	src:  url('./fonts/Aldrich-Regular.ttf') format('truetype');
+  font-family: "montserrat";
+  src: url("./fonts/Aldrich-Regular.ttf") format("truetype");
 }
 
-html, body {
-	position: relative;
-	width: 100%;
-	max-height: 100vh;
-	padding: 0;
-	overflow-y: auto;
-	font-family: Aldrich, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+html,
+body {
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  padding: 0;
+  overflow-y: auto;
+  font-family: montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 body {
-	color: #0c1645;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: Aldrich, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #0c1645;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
-	color: rgb(0,100,200);
-	text-decoration: none;
+  color: rgb(0, 100, 200);
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:visited {
-	color: rgb(0,80,160);
+  color: rgb(0, 80, 160);
 }
 
 label {
-	display: block;
+  display: block;
 }
 
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+  color: #ccc;
 }
 
 button {
-	background: rgba(0, 0, 0, 0.8);
-	color: white;
-	font-size: 2rem;
-	border: none;
-	border-radius: 25px;
-	width: 15vw;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 25px;
 }
 
 button:hover {
-	cursor: pointer;
-	background-color: #060606;
+  cursor: pointer;
+  /* background-color: #060606; */
 }
 
 button:disabled {
-	color: #999;
+  /* color: #999; */
 }
-
+/* 
 button:not(:disabled):active {
-	background-color: #ddd;
+  background-color: #ddd;
+} */
+
+/* button:focus {
+  border-color: #666;
+} */
+
+#about-button {
+  animation-duration: 4.4s;
+  width: 16vw;
+  height: 16vw;
+  left: 10vw;
+  top: 10vh;
 }
 
-button:focus {
-	border-color: #666;
+#faq-button {
+  animation-duration: 6s;
+  width: 24vw;
+  height: 24vw;
+  left: 8vw;
+  top: 60vh;
+}
+
+#sponsors-button {
+  animation-duration: 4.9s;
+  width: 18vw;
+  height: 18vw;
+  left: 68vw;
+  top: 20vh;
+}
+
+#winners-button {
+  animation-duration: 3s;
+  width: 12vw;
+  height: 12vw;
+  left: 78vw;
+  top: 60vh;
+}
+
+/* .planetButton:not(.active) {
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+} */
+
+.planetButton.active {
+  /* background-color: #ddd; */
+  font-size: 0;
+  z-index: -1;
+  left: 50% !important;
+  top: 50% !important;
+  width: 90vw !important;
+  height: 90vw !important;
+  margin-left: -45vw;
+  margin-top: -45vw;
+}
+
+.hidden {
+  margin-top: -100vh !important;
+  transition: all 0.5s;
+}
+
+.hasActive .planetButton:not(.active) {
+  width: 0 !important;
+}
+
+.hasActive > #about-button:not(.active) {
+  left: -20%;
+  top: -20%;
+}
+
+.hasActive > #faq-button:not(.active) {
+  left: -20%;
+  top: 120%;
+}
+
+.hasActive > #winners-button:not(.active) {
+  left: 120%;
+  top: 120%;
+}
+
+.hasActive > #sponsors-button:not(.active) {
+  left: 120%;
+  top: -20%;
+}
+
+ul {
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 420px) {
+  .planetButton {
+    font-size: 8vw;
+  }
+
+  #winners-button {
+    width: 36vw;
+    height: 36vw;
+    left: 60vw;
+    top: 66vh;
+  }
+
+  #faq-button {
+    width: 36vw;
+    height: 36vw;
+    left: 4vw;
+    top: 66vh;
+  }
+
+  #about-button {
+    width: 36vw;
+    height: 36vw;
+    left: 4vw;
+    top: 10vh;
+  }
+
+  #sponsors-button {
+    width: 36vw;
+    height: 36vw;
+    left: 60vw;
+    top: 10vh;
+  }
+
+  .content {
+    max-height: 80vh;
+  }
+
+  ul,
+  #list-container {
+    max-height: 40vh;
+  }
 }

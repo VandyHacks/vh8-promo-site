@@ -1,10 +1,12 @@
 <script>
+    import { navigate } from 'svelte-routing';
+
     import Button from './Button.svelte';
     import Panel from './Panel.svelte';
 </script>
 
 <Panel>
-    <Button name="sponsors" />
-    <Button name="speakers" />
-    <Button name="winners" />
+    <Button id="sponsors-button" image="orangePlanet.png" name="sponsors" />
+    <!-- <Button image="purplePlanet.png" name="speakers" /> -->
+    <Button id="winners-button" image="redPlanet.png" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" />
 </Panel>

@@ -13,7 +13,7 @@
             Welcome aboard VH VIII.
         </span>
     </div>
-    <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">APPLY</a></button>
+    <button><!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">-->Apply<!--</a>--></button>
 </Panel>
 
 <style>

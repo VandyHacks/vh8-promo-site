@@ -1,13 +1,60 @@
 <script>
+    import { createEventDispatcher } from "svelte";
     import { navigate } from "svelte-routing";
+    import { currentlyActive, isContentHidden } from '../stores.js';
 
     export let name;
+    export let image;
     export let path = name;
+    export let url;
+    export let id;
+    export let active = false;
+    export let planetButton = true;
+    export let noPlanetEffect = false;
+
+    const dispatch = createEventDispatcher();
 
     const handleClick = () => {
-        navigate(`/${path}`, { replace: false });
+        let timeout = 0;
+        if (!noPlanetEffect) {
+            timeout = 1400;
+            isContentHidden.set(true);
+            if (planetButton) {
+                dispatch("clickPlanet");
+                active = true;
+                currentlyActive.set(name);
+            } else {
+                currentlyActive.set(""); 
+            }
+        }
+        setTimeout( () => {
+            if (url) {
+                navigate(url);
+            } else {
+                navigate(`/${path}`, { replace: false });
+            }
+        }, timeout);
     }
     
 </script>
 
-<button on:click={handleClick}>{name.toUpperCase()}</button>
+<button id={id} style="background-image: url(assets/{image})" class:planetButton class:active on:click={handleClick}>{name.toLowerCase()}</button>
+
+<style>
+    .planetButton {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0.4em;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1.4s ease-in-out;
+        /* font-size: 8vw; */
+        /* width: 40vw;
+        height: 40vh; */
+    }
+</style>
