@@ -172,3 +172,51 @@ button:not(:disabled):active {
   left: 120%;
   top: -20%;
 }
+
+ul {
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 420px) {
+  .planetButton {
+    font-size: 8vw;
+  }
+
+  #winners-button {
+    width: 36vw;
+    height: 36vw;
+    left: 60vw;
+    top: 66vh;
+  }
+
+  #faq-button {
+    width: 36vw;
+    height: 36vw;
+    left: 4vw;
+    top: 66vh;
+  }
+
+  #about-button {
+    width: 36vw;
+    height: 36vw;
+    left: 4vw;
+    top: 10vh;
+  }
+
+  #sponsors-button {
+    width: 36vw;
+    height: 36vw;
+    left: 60vw;
+    top: 10vh;
+  }
+
+  .content {
+    max-height: 80vh;
+  }
+
+  ul,
+  #list-container {
+    max-height: 40vh;
+  }
+}

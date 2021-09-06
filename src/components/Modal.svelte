@@ -29,6 +29,8 @@
         position: relative;
         z-index: 4;
         min-width: 60vw;
+        max-height: 100%;
+        /* overflow: scroll; */
     }
     .logo-container {
         display: flex;
