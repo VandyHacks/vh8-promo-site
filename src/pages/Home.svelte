@@ -25,6 +25,5 @@
 		flex-direction: row;
 		justify-content: space-around;
 		color: #fff;
-		z-index: 2;
 	}
 </style>

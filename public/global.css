@@ -134,6 +134,8 @@ button:focus {
 
 .active {
   background-color: #ddd;
+  font-size: 0;
+  z-index: -1;
   left: 50% !important;
   top: 50% !important;
   width: 90vw !important;
@@ -142,8 +144,15 @@ button:focus {
   margin-top: -45vw;
 }
 
-.hasActive *:not(.active) {
+.panel {
+  transition: all 0.3s;
+}
+
+/* .hasActive *:not(.active) {
   display: none;
+} */
+.hasActive div {
+  margin-top: -100vh;
 }
 
 .hasActive .planetButton:not(.active) {

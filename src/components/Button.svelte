@@ -42,7 +42,7 @@ import { createEventDispatcher } from "svelte";
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 1s;
+        transition: all 1.4s ease-in-out;
         /* font-size: 8vw; */
         /* width: 40vw;
         height: 40vh; */
