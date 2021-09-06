@@ -144,6 +144,13 @@ button:not(:disabled):active {
   margin-top: -45vw;
 }
 
+.planetButton.active#faq-button {
+  width: 200vw !important;
+  height: 200vw !important;
+  margin-left: -100vw;
+  margin-top: -100vw;
+}
+
 .hidden {
   margin-top: -100vh !important;
   transition: all 0.5s;
