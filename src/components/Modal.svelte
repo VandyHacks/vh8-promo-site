@@ -21,14 +21,14 @@
         background: rgba(0, 0, 0, 0.5);
         border-radius: 20px;
         color: #fff;
-        padding: 1vh 5vw;
+        padding: 1vh 3vw;
         word-wrap: break-word;
         font-size: 1.75rem;
 	    box-sizing: border-box;
         margin: 0;
         position: relative;
         z-index: 4;
-        min-width: 60vw;
+        min-width: 80vw;
         max-height: 100%;
         /* overflow: scroll; */
     }
