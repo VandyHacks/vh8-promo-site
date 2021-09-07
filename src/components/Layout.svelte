@@ -8,7 +8,7 @@
 <div class:hasActive={$hasActive}>
     <Button id="about-button" image="bluePlanet.svg" name="about" active={$currentlyActive === "about"}/>
     <Button id="faq-button" image="pinkPlanet.svg" name="faq" active={$currentlyActive === "faq"}/>
-    <Button id="sponsors-button" image="orangePlanet.svg" name="sponsors" active={$currentlyActive === "sponsors"}/>
+    <Button id="sponsors-button" image="yellowPlanet.svg" name="sponsors" active={$currentlyActive === "sponsors"}/>
     <Button id="winners-button" image="redPlanet.svg" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" hasPlanetEffect={false} active={false}/>
 	<div class="content">
 		<slot />
