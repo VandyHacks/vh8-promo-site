@@ -165,6 +165,9 @@
 	#main {
 		background-image: url("../assets/background.png");
 		background-size: 100%;
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover;
 		max-width: 100vw;
 		height: 100vh;
 		margin: 0;
