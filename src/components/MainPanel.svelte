@@ -34,8 +34,8 @@
         box-shadow: 0px 0px 10px #fabc05;
         background-repeat: no-repeat;
         background-position: center;
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
