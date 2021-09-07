@@ -13,4 +13,10 @@
 		align-items: center;
 		color: #fff;
 	}
+
+	@media only screen and (max-width: 420px) {
+		.panel {
+			margin-top: -80px;
+		}
+	}
 </style>

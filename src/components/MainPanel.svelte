@@ -85,4 +85,11 @@
         display: relative;
         z-index: 5;
     }
+
+    @media only screen and (max-width: 420px) {
+        .logo-container {
+            width: 36vw;
+            height: 36vw;
+        }
+    }
 </style>

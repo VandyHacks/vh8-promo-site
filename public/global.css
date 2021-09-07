@@ -84,8 +84,8 @@ button:not(:disabled):active {
 
 #about-button {
   /* animation-duration: 4.4s; */
-  width: 16vw;
-  height: 16vw;
+  width: 14vw;
+  height: 14vw;
   left: 10vw;
   top: 5vh;
 }
@@ -93,15 +93,15 @@ button:not(:disabled):active {
 #faq-button {
   /* animation-duration: 6s; */
   width: 38vw;
-  height: 38vw;
+  height: 19vw;
   left: 5vw;
-  top: 30vh;
+  top: 64vh;
 }
 
 #sponsors-button {
   /* animation-duration: 4.9s; */
-  width: 18vw;
-  height: 18vw;
+  width: 20vw;
+  height: 20vw;
   left: 60vw;
   top: 5vh;
 }
@@ -196,30 +196,30 @@ strong {
   }
 
   #winners-button {
-    width: 36vw;
-    height: 36vw;
-    left: 60vw;
-    top: 66vh;
+    width: 24vw;
+    height: 24vw;
+    left: 70vw;
+    top: 72vh;
   }
 
   #faq-button {
-    width: 36vw;
-    height: 36vw;
-    left: 4vw;
-    top: 66vh;
+    width: 60vw;
+    height: 24vw;
+    left: -11vw;
+    top: 72vh;
   }
 
   #about-button {
-    width: 36vw;
-    height: 36vw;
-    left: 4vw;
+    width: 24vw;
+    height: 24vw;
+    left: 6vw;
     top: 10vh;
   }
 
   #sponsors-button {
-    width: 36vw;
-    height: 36vw;
-    left: 60vw;
+    width: 24vw;
+    height: 24vw;
+    left: 68vw;
     top: 10vh;
   }
 
