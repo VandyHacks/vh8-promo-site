@@ -29,7 +29,7 @@
             
             setTimeout(() => {
                 if (url) {
-                    navigate(url);
+                    window.open(url, '_blank');
                 } else {
                     navigate(`/${path}`, { replace: false });
                 }
