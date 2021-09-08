@@ -182,7 +182,7 @@ button:not(:disabled):active {
 
 ul {
   max-height: 50vh;
-  overflow: scroll;
+  overflow: auto;
 }
 
 strong {
