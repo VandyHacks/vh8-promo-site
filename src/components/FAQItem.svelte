@@ -17,8 +17,10 @@
 
 <div on:click={toggle} class="noselect">
     <li style="list-style-image: url('/assets/{icon}.svg');" class="outer-list">
-        {question}
-        {#if expanded}
+        <div class="faq-question">
+            {question}
+        </div>
+         {#if expanded}
             <ul class="inner-list">
                 <li class="answer">{answer}</li>
             </ul>
@@ -48,5 +50,9 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+    }
+
+    .faq-question:hover {
+        cursor: pointer;
     }
 </style>
