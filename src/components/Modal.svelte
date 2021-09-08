@@ -12,7 +12,7 @@
     </div>
     <slot></slot>
     <div class="return-button">
-        <Button planetButton={false} name="return" path="" />
+        <Button id="return-button" planetButton={false} name="return" path="" />
     </div>
 </div>
 
