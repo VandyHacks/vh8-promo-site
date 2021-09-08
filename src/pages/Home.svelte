@@ -3,7 +3,8 @@
 	import MainPanel from "../components/MainPanel.svelte";
 	import RightPanel from "../components/RightPanel.svelte";
 	import Layout from "../components/Layout.svelte";
-	import { isContentHidden } from "../stores"; 
+	import { isContentHidden, currentlyActive } from "../stores";
+	currentlyActive.set("");
 </script>
 
 <Layout>
