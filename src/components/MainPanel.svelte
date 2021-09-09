@@ -34,9 +34,8 @@
         padding: auto;
         border-radius: 50%;
         z-index: 1;
-        transition: 0.4s;
     }
-    
+
     .logo-container img {
         width: 80%;
     }
