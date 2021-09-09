@@ -36,12 +36,8 @@
 
 <style>
     #list-container {
-        max-height: 40vh;
-        /* overflow: scroll; */
-    }
-
-    #list-container ul {
-        max-height: 40vh;
+        max-height: 46vh;
+        overflow: scroll;
     }
 
     #list {

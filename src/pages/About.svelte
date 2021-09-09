@@ -21,5 +21,7 @@
 <style>
     ul {
         margin-left: 5vw;
+        max-height: calc(46vh - 2em);
+        overflow: auto;
     }
 </style>

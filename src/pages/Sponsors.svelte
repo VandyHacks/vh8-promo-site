@@ -31,7 +31,7 @@
         display: flex;
         flex-direction: column;
         overflow: auto;
-        height: 50vh;
+        height: 46vh;
     }
     .sponsors-row {
         display: flex;
