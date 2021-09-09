@@ -81,6 +81,11 @@
         font-size: 1.6em;
         display: relative;
         z-index: 5;
+        transition: 0.3s;
+    }
+    
+    a#apply:hover {
+        box-shadow: 0px 0px 20px #fabc05;
     }
 
     @media only screen and (max-width: 420px) {
