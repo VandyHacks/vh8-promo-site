@@ -6,10 +6,7 @@
 
 <Panel>
     <div class="logo-container">
-        <a href="https://apply.vandyhacks.org" target="_blank" rel="noopener">
             <img src="../assets/logo.png" alt="vandyhacks-space-logo">
-        </a>
-
     </div>
     <div class="subtitle">
         <span class="subtitle-text">
@@ -26,7 +23,7 @@
     .logo-container {
         align-self: center;
         background-color: white;
-        box-shadow: 0px 0px 10px #fabc05;
+        box-shadow: 0px 0px 15px #fabc05;
         background-repeat: no-repeat;
         background-position: center;
         width: 200px;
@@ -39,13 +36,7 @@
         z-index: 1;
         transition: 0.4s;
     }
-
-    .logo-container:hover {
-        width: 220px;
-        height: 220px;
-        box-shadow: 0px 0px 30px #fabc05;
-    }
-
+    
     .logo-container img {
         width: 80%;
     }
