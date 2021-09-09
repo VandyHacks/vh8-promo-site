@@ -6,7 +6,7 @@
 
 <Panel>
     <div class="logo-container">
-        
+            <img src="../assets/logo.png" alt="vandyhacks-space-logo">
     </div>
     <div class="subtitle">
         <span class="subtitle-text">
@@ -22,16 +22,8 @@
 <style>
     .logo-container {
         align-self: center;
-        /*background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 1) 0%,
-            rgba(0, 0, 0, 0.5) 50%,
-            rgba(0, 0, 0, 0) 100%
-        );*/
-        background-image: url("../assets/logo.png");
-        background-size: 80%;
         background-color: white;
-        box-shadow: 0px 0px 10px #fabc05;
+        box-shadow: 0px 0px 15px #fabc05;
         background-repeat: no-repeat;
         background-position: center;
         width: 200px;
@@ -41,6 +33,11 @@
         align-items: center;
         padding: auto;
         border-radius: 50%;
+        z-index: 1;
+    }
+
+    .logo-container img {
+        width: 80%;
     }
 
     .subtitle {
@@ -84,6 +81,11 @@
         font-size: 1.6em;
         display: relative;
         z-index: 5;
+        transition: 0.3s;
+    }
+    
+    a#apply:hover {
+        box-shadow: 0px 0px 20px #fabc05;
     }
 
     @media only screen and (max-width: 420px) {
