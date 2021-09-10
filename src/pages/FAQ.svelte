@@ -1,9 +1,20 @@
 <script>
-    import FAQItem from '../components/FAQItem.svelte';
-    import Layout from '../components/Layout.svelte';
+    import FAQItem from "../components/FAQItem.svelte";
+    import Layout from "../components/Layout.svelte";
     import Modal from "../components/Modal.svelte";
-    import { currentlyActive } from '../stores.js';
+    import { currentlyActive } from "../stores.js";
+    import { onMount } from "svelte";
+
     currentlyActive.set("faq");
+
+    let showArrow = true;
+
+    onMount(() => {
+        const ctr = document.querySelector("#list-container");
+        ctr.addEventListener("scroll", () => {
+            showArrow = (ctr.offsetHeight + ctr.scrollTop < ctr.scrollHeight);
+        });
+    });
 </script>
 
 <Layout>
@@ -31,16 +42,84 @@
                 <FAQItem question="I have more questions!" answer="Send us an email at info@vandyhacks.org! We'll be happy to answer!" />
             </ul>
         </div>
+        {#if showArrow}
+            <div class="down-arrow" />
+        {/if}
     </Modal>
 </Layout>
 
 <style>
     #list-container {
+        position: relative;
         max-height: 46vh;
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     #list {
         padding-left: 5vw;
+    }
+
+    .down-arrow {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: inherit;
+        height: 60px;
+        width: 80px;
+        margin: 0px 0 0 -40px;
+        line-height: 60px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        color: #fff;
+        text-align: center;
+        font-size: 70px;
+        z-index: 100;
+        text-decoration: none;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+        -webkit-animation: move-down 2s ease-in-out infinite;
+        -moz-animation: move-down 2s ease-in-out infinite;
+        animation: move-down 2s ease-in-out infinite;
+    }
+
+    @-webkit-keyframes move-down {
+        0% {
+            -webkit-transform: translate(0, -20px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translate(0, 20px);
+            opacity: 0;
+        }
+    }
+    @-moz-keyframes move-down {
+        0% {
+            -moz-transform: translate(0, -20px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -moz-transform: translate(0, 20px);
+            opacity: 0;
+        }
+    }
+    @keyframes move-down {
+        0% {
+            transform: translate(0, -20px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translate(0, 20px);
+            opacity: 0;
+        }
     }
 </style>
