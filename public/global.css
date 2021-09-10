@@ -151,6 +151,11 @@ button:not(:disabled):active {
   margin-top: -100vw;
 }
 
+.logo-container.active {
+  width: 80vw !important;
+  height: 80vw !important;
+}
+
 .hidden {
   margin-top: -100vh !important;
   transition: all 0.5s;
