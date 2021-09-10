@@ -53,7 +53,7 @@
         position: relative;
         max-height: 46vh;
         overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
     }
 
     #list {
