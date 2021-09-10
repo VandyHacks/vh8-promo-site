@@ -42,7 +42,6 @@
         padding: auto;
         border-radius: 50%;
         z-index: 1;
-        transition: all 0.5s cubic-bezier(0.5, 0, 0, 1), font-size 0s;
     }
 
     .logo-container img {

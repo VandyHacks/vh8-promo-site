@@ -152,8 +152,9 @@ button:not(:disabled):active {
 }
 
 .logo-container.active {
-  width: 80vw !important;
-  height: 80vw !important;
+  width: 200vw !important;
+  height: 200vw !important;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0, 1), font-size 0s;
 }
 
 .hidden {
