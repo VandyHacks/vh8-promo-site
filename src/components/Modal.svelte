@@ -1,11 +1,12 @@
 <script>
+    import { fly } from 'svelte/transition';
     import Logo from "../assets/vhlogo.svelte";
     import Button from '../components/Button.svelte';
 	import { isContentHidden } from '../stores.js';
     export let title;
 </script>
 
-<div class="modal" class:hidden={$isContentHidden}>
+<div class="modal" class:hidden={$isContentHidden} in:fly="{{ y: -1000, duration: 500 }}">
     <div class="logo-container">
         <Logo width="5vw" height="auto" />
         <h1>{title}</h1>

@@ -1,4 +1,5 @@
 <script>
+	import { fly } from 'svelte/transition';
 	import LeftPanel from "../components/LeftPanel.svelte";
 	import MainPanel from "../components/MainPanel.svelte";
 	import RightPanel from "../components/RightPanel.svelte";
@@ -8,7 +9,7 @@
 </script>
 
 <Layout>
-	<div id="home" class:hidden={$isContentHidden}>
+	<div id="home" class:hidden={$isContentHidden} in:fly="{{ y: -1000, duration: 500 }}">
 		<!-- <LeftPanel /> -->
 		<MainPanel />
 		<!-- <RightPanel /> -->
