@@ -37,7 +37,7 @@
 <style>
     #list-container {
         max-height: 46vh;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     #list {
