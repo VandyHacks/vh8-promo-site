@@ -1,19 +1,19 @@
 <script>
-    import { currentlyActive } from '../stores.js';
     import Logo from "../assets/vhlogo.svelte";
 
     import Panel from "./Panel.svelte";
 
+    let active = false;
     const onLogoClick = () => {
-        currentlyActive.set("logo");
+        active = true;
         setTimeout(() => {
-            currentlyActive.set("");
+            active = false;
         }, 500);
     };
 </script>
 
 <Panel>
-    <div class="logo-container {$currentlyActive == 'logo' ? 'active' : ''}" on:click={onLogoClick}>
+    <div class="logo-container" class:active on:click={onLogoClick}>
         <img src="../assets/logo.png" alt="vandyhacks-space-logo">
     </div>
     <div class="subtitle">
@@ -41,7 +41,7 @@
         align-items: center;
         padding: auto;
         border-radius: 50%;
-        z-index: 1;
+        z-index: 100;
     }
 
     .logo-container img {
