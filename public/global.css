@@ -189,7 +189,7 @@ button:not(:disabled):active {
 }
 
 .hasActive > #speakers-button:not(.active) {
-  left: -20%;
+  left: 120%;
 }
 
 strong {
