@@ -12,7 +12,7 @@
     </div>
     <div class="text">
         <div class="eventName">{@html eventName}</div>
-        <div class="eventDesc">{eventDesc}</div>
+        <div class="eventDesc">{@html eventDesc}</div>
     </div>
 </div>
 
