@@ -33,9 +33,12 @@
         flex-basis: 0;
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 0.7em;
     }
     .eventName {
         font-size: 1.5em;
+    }
+    .eventDesc {
+        font-size: 0.7em;
     }
 </style>
