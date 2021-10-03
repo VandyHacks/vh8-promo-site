@@ -29,16 +29,16 @@
         width: 90%;
     }
     .text {
-        flex-grow: 1;
+        flex-grow: 2;
         flex-basis: 0;
         display: flex;
         flex-direction: column;
-        gap: 0.7em;
+        gap: 0.6em;
     }
     .eventName {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .eventDesc {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 </style>

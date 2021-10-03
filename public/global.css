@@ -108,8 +108,8 @@ button:not(:disabled):active {
 
 #speakers-button {
   /* animation-duration: 4.9s; */
-  width: 14vw;
-  height: 14vw;
+  width: 12vw;
+  height: 12vw;
   left: 80vw;
   top: 40vh;
 }
