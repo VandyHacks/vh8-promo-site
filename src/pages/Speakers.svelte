@@ -39,7 +39,7 @@
         <div id="content">
             <div id="buttons">
                 {#each Object.entries(speakers) as [name, { image }]}
-                    <img src={image} alt={name} width="100vw" height="100vw" class="img-button" on:click={changeSpeaker} />
+                    <img src={image} alt={name} class="img-button" on:click={changeSpeaker} />
                 {/each}
             </div>
             <SpeakerItem speakerName={selectedSpeaker} {...speakers[selectedSpeaker]} />
@@ -51,21 +51,32 @@
     #buttons {
         display: flex;
         flex-direction: row;
-        gap: 5%;
         justify-content: center;
+        align-items: flex-start;
+        gap: 2%;
+        overflow: visible;
     }
 
     .img-button {
+        height: 8vh;
         object-fit: contain;
         cursor: pointer;
+        box-shadow: 0px 0px 15px #fabc05;
+        margin-top: 15px;
+        overflow: visible;
     }
 
     #content {
         display: flex;
         flex-direction: column;
-        gap: 1.5em;
-        overflow-y: auto;
-        height: 50vh;
-        padding-left: 5vw;
+        gap: 2vh;
+        max-height: calc(46vh - 2em);
+        overflow: auto;
+
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
     }
 </style>

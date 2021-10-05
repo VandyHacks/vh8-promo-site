@@ -26,19 +26,19 @@
     }
     .image {
         object-fit: contain;
-        width: 90%;
+        height: 25vh;
     }
     .text {
-        flex-grow: 2;
+        flex-grow: 3;
         flex-basis: 0;
         display: flex;
         flex-direction: column;
-        gap: 0.6em;
+        gap: 0.5em;
     }
     .eventName {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .eventDesc {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 </style>
