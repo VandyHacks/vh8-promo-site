@@ -39,7 +39,7 @@
         <div id="content">
             <div id="buttons">
                 {#each Object.keys(speakers) as name, i}
-                    <span class="speaker-button" on:click={changeSpeaker}>{name}</span> {#if i < Object.keys(speakers).length - 1}⋅{/if}
+                    <span class="speaker-button" on:click={changeSpeaker}>{name}</span> {#if i < Object.keys(speakers).length - 1}·{/if}
                 {/each}
             </div>
             <SpeakerItem speakerName={selectedSpeaker} {...speakers[selectedSpeaker]} />
