@@ -30,7 +30,7 @@
     let selectedSpeaker = Object.entries(speakers)[0][0];
 
     const changeSpeaker = (e) => {
-        selectedSpeaker = e.target.alt;
+        selectedSpeaker = e.target.innerHTML;
     }
 </script>
 
@@ -38,8 +38,8 @@
     <Modal title="SPEAKERS">
         <div id="content">
             <div id="buttons">
-                {#each Object.entries(speakers) as [name, { image }]}
-                    <img src={image} alt={name} class="img-button" on:click={changeSpeaker} />
+                {#each Object.keys(speakers) as name, i}
+                    <span class="speaker-button" on:click={changeSpeaker}>{name}</span> {#if i < Object.keys(speakers).length - 1}⋅{/if}
                 {/each}
             </div>
             <SpeakerItem speakerName={selectedSpeaker} {...speakers[selectedSpeaker]} />
@@ -51,19 +51,14 @@
     #buttons {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: flex-start;
-        gap: 2%;
         overflow: visible;
     }
 
-    .img-button {
-        height: 8vh;
-        object-fit: contain;
+    .speaker-button {
         cursor: pointer;
-        box-shadow: 0px 0px 15px #fabc05;
-        margin-top: 15px;
-        overflow: visible;
+        text-shadow: 0px 0px 15px #fabc05;
     }
 
     #content {
