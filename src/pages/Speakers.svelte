@@ -54,6 +54,7 @@
         justify-content: space-around;
         align-items: flex-start;
         overflow: visible;
+        font-size: 0.7em;
     }
 
     .speaker-button {

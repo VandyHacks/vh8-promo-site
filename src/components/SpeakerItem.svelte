@@ -40,9 +40,9 @@
         gap: 0.5em;
     }
     .eventName {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .eventDesc {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 </style>
