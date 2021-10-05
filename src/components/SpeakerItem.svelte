@@ -26,7 +26,7 @@
     }
     .image {
         object-fit: contain;
-        height: 25vh;
+        height: 29vh;
     }
     .text {
         flex-grow: 3;

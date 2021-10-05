@@ -70,13 +70,8 @@
         display: flex;
         flex-direction: column;
         gap: 2vh;
-        max-height: calc(46vh - 2em);
+        height: calc(50vh - 2em);
         overflow: auto;
-
-        margin-block-start: 1em;
         margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
     }
 </style>
