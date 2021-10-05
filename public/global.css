@@ -106,12 +106,20 @@ button:not(:disabled):active {
   top: 5vh;
 }
 
+#speakers-button {
+  /* animation-duration: 4.9s; */
+  width: 12vw;
+  height: 12vw;
+  left: 80vw;
+  top: 40vh;
+}
+
 #winners-button {
   /* animation-duration: 3s; */
   width: 12vw;
   height: 12vw;
-  left: 78vw;
-  top: 60vh;
+  left: 70vw;
+  top: 70vh;
 }
 
 /* .planetButton:not(.active) {
@@ -178,6 +186,10 @@ button:not(:disabled):active {
 .hasActive > #sponsors-button:not(.active) {
   left: 120%;
   top: -20%;
+}
+
+.hasActive > #speakers-button:not(.active) {
+  left: 120%;
 }
 
 strong {

@@ -6,7 +6,7 @@
 </script>
 
 <Layout>
-    <Modal title="ABOUT" let:hidden={hidden}>
+    <Modal title="ABOUT">
         <ul>
             <li><strong>Mission</strong>: VandyHacks VIII</li>
             <li><strong>Date</strong>: October 8, 2021 - October 10, 2021</li>
