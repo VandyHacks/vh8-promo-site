@@ -23,10 +23,14 @@
     .imageContainer {
         flex-grow: 1;
         flex-basis: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .image {
         object-fit: contain;
         height: 29vh;
+        border-radius: 10px;
     }
     .text {
         flex-grow: 3;
