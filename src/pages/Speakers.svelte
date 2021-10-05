@@ -51,10 +51,11 @@
     #buttons {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: flex-start;
         overflow: visible;
         font-size: 0.7em;
+        gap: 1%;
     }
 
     .speaker-button {
