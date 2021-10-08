@@ -28,12 +28,12 @@
     <Button id="faq-button" image="pinkPlanet.svg" name="faq" active={$currentlyActive === "faq"}/>
     <Button id="sponsors-button" image="yellowPlanet.svg" name="sponsors" active={$currentlyActive === "sponsors"}/>
     <Button id="speakers-button" image="dustPlanet.svg" name="speakers" active={$currentlyActive === "speakers"}/>
+    <Button id="schedule-button" image="orangePlanet.svg" name="schedule" active={$currentlyActive === "schedule"}/>
     <Button id="winners-button" image="redPlanet.svg" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" hasPlanetEffect={false} active={false}/>
 	<div id="content" class="content">
 		<slot />
 	</div>
     <Footer />
-    <!-- <Button image="grayPlanet.png" name="schedule" /> -->
     <!-- <Button image="purplePlanet.png" name="speakers" /> -->
 </div>
 
