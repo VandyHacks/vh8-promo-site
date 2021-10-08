@@ -8,19 +8,18 @@
 
 <Layout>
     <div id="sponsors">
-        <Modal title="SPONSORS">
+        <Modal title="SPONSORS" special={true}>
             <div id="content">
-                <!--<div class="sponsors-row">
-                    <SponsorItem big={false} image="https://via.placeholder.com/200x200" text="My name is Cat. I am a project manager in Capple. I specialized in search optimization, particularly in the field of cat food" />
-                    <SponsorItem big image="https://via.placeholder.com/200x200" text="My name is Lion. I am a senior software engineer in Lion Valley. I don't know what I'm doing most of the time" />
-                    <SponsorItem big={false} image="https://via.placeholder.com/200x200" text="My name is dog. I am the CEO of Dogs Inc., a company which thrives to create a more sustainable earth for future generation of canines." />
+                <div class="sponsors-row">
+                    <SponsorItem image="assets/imc.png" factor="50%" url="https://www.imc.com/" />
+                    <SponsorItem image="assets/asurion.png" factor="105%" url="https://www.asurion.com/" />
+                    <SponsorItem image="assets/capital-one.png" factor="50%" url="https://www.capitalone.com/" />
                 </div>
                 <div class="sponsors-row">
-                    <SponsorItem big={false} image="https://via.placeholder.com/200x200" text="My name is Cat. I am a project manager in Capple. I specialized in search optimization, particularly in the field of cat food" />
-                    <SponsorItem big image="https://via.placeholder.com/200x200" text="My name is Lion. I am a senior software engineer in Lion Valley. I don't know what I'm doing most of the time" />
-                    <SponsorItem big={false} image="https://via.placeholder.com/200x200" text="My name is dog. I am the CEO of Dogs Inc., a company which thrives to create a more sustainable earth for future generation of canines." />
-                </div>-->
-                TBD
+                    <SponsorItem image="assets/echo3d.jpg" factor="30%" url="https://www.echo3d.co/" />
+                    <SponsorItem image="assets/hrt.png" factor="50%" url="https://www.hudsonrivertrading.com/" />
+                    <SponsorItem image="assets/l3harris.png" factor="50%" url="https://www.l3harris.com/" />
+                </div>
             </div>
         </Modal>
     </div>
@@ -32,6 +31,7 @@
         flex-direction: column;
         overflow: auto;
         height: 46vh;
+        gap: 1em;
     }
     .sponsors-row {
         display: flex;
