@@ -1,9 +1,7 @@
 <script>
-
     import { onMount } from "svelte";
     import { scheduleItems } from '../stores.js';
     import { get } from 'svelte/store';
-
 
     onMount(async () => {
         fetch("https://apply.vandyhacks.org/api/manage/events/pull", {
@@ -17,11 +15,9 @@
         });
     });
 
-    const sortedSchedule = get(scheduleItems).sort(
-        (a, b) => new Date(a.startTimestamp) - new Date(b.startTimestamp)
-    );
+    const sortedSchedule = get(scheduleItems).sort((a, b) => new Date(a.startTimestamp) - new Date(b.startTimestamp));
 
-    const isValidHttpUrl = (string) => {
+    const isValidUrl = (string) => {
         let url;
         try {
             url = new URL(string);
@@ -33,7 +29,7 @@
     };
 
     const parseLocation = (location) => {
-        const isURL = isValidHttpUrl(location);
+        const isURL = isValidUrl(location);
         if (isURL) {
             const host = new URL(location).host.split(".")[1];
             return `<a href="${location}" target="_blank" style="text-decoration: none, color: #fff">${
@@ -46,11 +42,12 @@
 
     const formatTime = (timeStamp, duration) => {
         const startDate = new Date(timeStamp);
+        const endDate = new Date(startDate.getTime() + duration * 60000);
+
         const startTime = `${
             startDate.getHours() < 10 ? "0" : ""}${startDate.getHours()}:${
             startDate.getMinutes() < 10 ? "0" : ""
         }${startDate.getMinutes()}`;
-        const endDate = new Date(startDate.getTime() + duration * 60000);
         const endTime = `${
             endDate.getHours() < 10 ? "0" : ""}${endDate.getHours()}:${
             endDate.getMinutes() < 10 ? "0" : ""
@@ -195,7 +192,7 @@
         content: " ";
         display: block;
         width: 6px;
-        height: 6500px;
+        height: 6600px;
         margin-left: -3px;
         background: rgba(255, 255, 255, 0.15);
         background: -moz-linear-gradient(
