@@ -4,12 +4,13 @@
     import Button from '../components/Button.svelte';
 	import { isContentHidden } from '../stores.js';
     export let title;
+    export let special;
 </script>
 
-<div class="modal" class:hidden={$isContentHidden} in:fly="{{ y: -1000, duration: 500 }}">
+<div class="modal" class:special class:hidden={$isContentHidden} in:fly="{{ y: -1000, duration: 500 }}">
     <div class="logo-container">
         <Logo width="5vw" height="auto" />
-        <h1>{title}</h1>
+        <h1 class:special>{title}</h1>
     </div>
     <slot></slot>
     <div class="return-button">
@@ -18,6 +19,12 @@
 </div>
 
 <style>
+    h1.special {
+        color: rgba(0, 0, 0, 1);
+    }
+    div.special {
+        background: rgba(255, 255, 255, 0.5) !important;
+    }
     .modal {
         background: rgba(0, 0, 0, 0.5);
         border-radius: 20px;
