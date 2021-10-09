@@ -5,7 +5,18 @@
 
     onMount(async () => {
         try {
-            const res = await fetch("http://calendar.nisala.workers.dev/");
+            const res = await fetch("https://calendar.nisala.workers.dev/", 
+                {
+                    method: "GET",
+                    mode: "cors",
+                    credentials: "same-origin",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Access-Control-Allow-Origin": "*",
+                        "Access-Control-Allow-Headers":
+                        "Origin, X-Requested-With, Content-Type, Accept",
+                    },
+                });
             const items = await res.json();
             scheduleItems.set(items);
         } catch (e) {
