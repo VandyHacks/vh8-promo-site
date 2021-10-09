@@ -157,6 +157,7 @@
 		<Route path="/">
 			<Home />
 		</Route>
+		<Route component={Home} />
 	</Router>
 	<div id="background-stars" />
 </div>

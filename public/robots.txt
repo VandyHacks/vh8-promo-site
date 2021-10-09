@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+User-agent: vh{your_flag_here}
+Disallow: /
