@@ -5,25 +5,12 @@
 
     onMount(async () => {
         try {
-            const fetchRes = await fetch(
-                "https://apply.vandyhacks.org/api/manage/events/pull",
-                {
-                    method: "GET",
-                    mode: "no-cors",
-                    credentials: "same-origin",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Access-Control-Allow-Origin": "*",
-                        "Access-Control-Allow-Headers":
-                            "Origin, X-Requested-With, Content-Type, Accept",
-                    },
-                    referrerPolicy: "no-referrer",
-                }
-            );
-            const response = await fetchRes.json();
-            scheduleItems.set(response);
+            const res = await fetch("http://calendar.nisala.workers.dev/");
+            const items = await res.json();
+            scheduleItems.set(items);
         } catch (e) {
             console.error("Failed to fetch latest events, showing fallback");
+            console.error(e);
         }
     });
 
