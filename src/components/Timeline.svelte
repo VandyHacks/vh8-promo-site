@@ -1,21 +1,22 @@
 <script>
     import { onMount } from "svelte";
-    import { scheduleItems } from '../stores.js';
-    import { get } from 'svelte/store';
+    import { scheduleItems } from "../stores.js";
+    import { get } from "svelte/store";
 
     onMount(async () => {
-        fetch("https://apply.vandyhacks.org/api/manage/events/pull", {
-            credentials: "include"
-        })
-        .then(response => response.json())
-        .then(data => {
-            scheduleItems.set(data);
-        }).catch(_ => {
+        try {
+            const res = await fetch("http://calendar.nisala.workers.dev/");
+            const items = await res.json();
+            scheduleItems.set(items);
+        } catch (e) {
             console.error("Failed to fetch latest events, showing fallback");
-        });
+            console.error(e);
+        }
     });
 
-    const sortedSchedule = get(scheduleItems).sort((a, b) => new Date(a.startTimestamp) - new Date(b.startTimestamp));
+    const sortedSchedule = get(scheduleItems).sort(
+        (a, b) => new Date(a.startTimestamp) - new Date(b.startTimestamp)
+    );
 
     const isValidUrl = (string) => {
         let url;
@@ -45,11 +46,13 @@
         const endDate = new Date(startDate.getTime() + duration * 60000);
 
         const startTime = `${
-            startDate.getHours() < 10 ? "0" : ""}${startDate.getHours()}:${
+            startDate.getHours() < 10 ? "0" : ""
+        }${startDate.getHours()}:${
             startDate.getMinutes() < 10 ? "0" : ""
         }${startDate.getMinutes()}`;
         const endTime = `${
-            endDate.getHours() < 10 ? "0" : ""}${endDate.getHours()}:${
+            endDate.getHours() < 10 ? "0" : ""
+        }${endDate.getHours()}:${
             endDate.getMinutes() < 10 ? "0" : ""
         }${endDate.getMinutes()}`;
 
@@ -232,5 +235,46 @@
         );
 
         z-index: 5;
+    }
+
+    @media only screen and (max-width: 420px) {
+        * {
+            font-size: 1rem;
+        }
+        .bubble {
+            margin-left: 0px;
+        }
+
+        .left {
+            padding: 24px;
+            min-width: calc(100% - 24px);
+            box-sizing: content-box;
+        }
+        .right {
+            min-width: calc(100% - 24px);
+            box-sizing: content-box;
+        }
+
+        .bubble::after {
+            content: "";
+            border: 0;
+        }
+
+        .timeline:before {
+            visibility: hidden;
+        }
+
+        .bubble {
+            flex-direction: column;
+            min-width: 100%;
+        }
+
+        .name {
+            font-size: 2.5rem;
+        }
+
+        .right {
+            border: 0;
+        }
     }
 </style>
