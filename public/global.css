@@ -200,6 +200,11 @@ button:not(:disabled):active {
   left: 120%;
 }
 
+.hasActive > #schedule-button:not(.active) {
+  left: -20%;
+  top: 120%;
+}
+
 strong {
   font-weight: heavy;
   text-decoration: underline;
