@@ -29,7 +29,7 @@
     <Button id="sponsors-button" image="yellowPlanet.svg" name="sponsors" active={$currentlyActive === "sponsors"}/>
     <Button id="speakers-button" image="dustPlanet.svg" name="speakers" active={$currentlyActive === "speakers"}/>
     <Button id="schedule-button" image="orangePlanet.svg" name="schedule" active={$currentlyActive === "schedule"}/>
-    <Button id="winners-button" image="redPlanet.svg" name="winners" url="https://vandyhacks-retro-edn.devpost.com/project-gallery" hasPlanetEffect={false} active={false}/>
+    <Button id="winners-button" image="redPlanet.svg" name="winners" url="https://vandyhacksviii.devpost.com/project-gallery" hasPlanetEffect={false} active={false}/>
 	<div id="content" class="content">
 		<slot />
 	</div>
