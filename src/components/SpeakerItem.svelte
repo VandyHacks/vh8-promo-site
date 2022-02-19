@@ -7,7 +7,7 @@
 
 <div class="container">
     <div class="imageContainer">
-        <img class="image" src={image} alt={speakerName} />
+        <img class="image" src={image} />
     </div>
     <div class="text">
         <div class="eventName">{@html eventName}</div>

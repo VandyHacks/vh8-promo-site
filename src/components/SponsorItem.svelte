@@ -5,7 +5,7 @@
 </script>
 
 <div class="content">
-    <img class="image" style="width: {factor}" src="{image}" alt="placeholder" on:click={window.open(url, '_blank')}/>
+    <img class="image" style="width: {factor}" src="{image}" on:click={window.open(url, '_blank')}/>
 </div>
 
 <style>
