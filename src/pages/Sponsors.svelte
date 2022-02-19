@@ -11,14 +11,14 @@
         <Modal title="SPONSORS" special={true}>
             <div id="content">
                 <div class="sponsors-row">
-                    <SponsorItem image="assets/imc.png" factor="50%" url="https://www.imc.com/" />
-                    <SponsorItem image="assets/asurion.png" factor="105%" url="https://www.asurion.com/" />
-                    <SponsorItem image="assets/capital-one.png" factor="50%" url="https://www.capitalone.com/" />
+                    <SponsorItem image="assets/imc.png" factor="50%" url="http://www.imc.com/" />
+                    <SponsorItem image="assets/asurion.png" factor="105%" url="http://www.asurion.com/" />
+                    <SponsorItem image="assets/capital-one.png" factor="50%" url="http://www.capitalone.com/" />
                 </div>
                 <div class="sponsors-row">
-                    <SponsorItem image="assets/echo3d.jpg" factor="30%" url="https://www.echo3d.co/" />
-                    <SponsorItem image="assets/hrt.png" factor="50%" url="https://www.hudsonrivertrading.com/" />
-                    <SponsorItem image="assets/l3harris.png" factor="50%" url="https://www.l3harris.com/" />
+                    <SponsorItem image="assets/echo3d.jpg" factor="30%" url="http://www.echo3d.co/" />
+                    <SponsorItem image="assets/hrt.png" factor="50%" url="http://www.hudsonrivertrading.com/" />
+                    <SponsorItem image="assets/l3harris.png" factor="50%" url="http://www.l3harris.com/" />
                 </div>
             </div>
         </Modal>

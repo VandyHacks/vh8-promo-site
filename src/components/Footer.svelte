@@ -1,7 +1,7 @@
 <div class="footer">
     <a
         id="code-of-conduct"
-        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+        href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"
         target="_blank"
         rel="noopener"
     >
@@ -11,13 +11,13 @@
     <br />
     <br />
     this site is powered by
-    <a href="https://netlify.com" target="_blank" rel="noopener">netlify</a>
+    <a href="http://netlify.com" target="_blank" rel="noopener">netlify</a>
 </div>
 <div class="socials">
     <!-- Instagram Icon -->
     <a
         id="instagram-container"
-        href="https://www.instagram.com/vandyhacks/"
+        href="http://www.instagram.com/vandyhacks/"
         target="_blank"
         rel="noopener"
     >
@@ -31,7 +31,7 @@
     <!-- Youtube Icon -->
     <a
         id="youtube-container"
-        href="https://www.youtube.com/channel/UC-sXkznjkmHLjpA5nlfdswg/"
+        href="http://www.youtube.com/channel/UC-sXkznjkmHLjpA5nlfdswg/"
         target="_blank"
         rel="noopener"
     >
@@ -45,7 +45,7 @@
     <!-- Facebook Icon -->
     <a
         id="facebook-container"
-        href="https://www.facebook.com/vandyhacks/"
+        href="http://www.facebook.com/vandyhacks/"
         target="_blank"
         rel="noopener"
     >
@@ -59,7 +59,7 @@
     <!-- Twitter Icon -->
     <a
         id="twitter-container"
-        href="https://twitter.com/vandyhacks"
+        href="http://twitter.com/vandyhacks"
         target="_blank"
         rel="noopener"
     >
@@ -73,7 +73,7 @@
     <!-- Twitch Icon -->
     <a
         id="twitch-container"
-        href="https://www.twitch.tv/vandyhacks"
+        href="http://www.twitch.tv/vandyhacks"
         target="_blank"
         rel="noopener"
     >
@@ -87,7 +87,7 @@
     <!-- Github Icon -->
     <a
         id="github-container"
-        href="https://github.com/VandyHacks"
+        href="http://github.com/VandyHacks"
         target="_blank"
         alt="github icon"
     >
